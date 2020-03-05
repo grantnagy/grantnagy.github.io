@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+body {
+	margin: 0;
+	background-color:  #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+    color: #404040;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: black;
+}
+ 
+.container {
+	width: 80%;
+	padding-left: 20px;
+}
+
+header {
+  background: #191919;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 32px;
+  position: relative;
+}
+
+nav a {
+  color: #d1d1d1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color:white;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.container1 {
+    position: relative;
+    width: 600px;
+    height: 338px;
+    display: inline-block;
+    max-width: 600px;
+}
+.container2 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    max-width: 600px;
+}
+.image {
+    display: block;
+    width: 600px;
+    height: 338px;
+}
+.square {
+    display: block;
+    width: 600px;
+    height: 600px;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #fcf59dd8;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-serif;
+}
+.text a {
+    color: #2e2e2e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+.text a:hover {
+    color: black;
+}
+  
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #fcf59dd8;
+}
+.container1:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+}
+.container2:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+}
+
+
+.footer
+{
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+  font-size: 10px;
+}
+
+.main_content .info{
+  color: #717171;
+  line-height: 25px;
+}
+
+.main_content .info div{
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* For phones: */
+@media only screen and (max-width: 600px) {
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    width: 50%;
+    padding-left: 0px;
+  }
+  nav li {
+    display: table;
+    margin-left: 30px;
+    padding-top: 32px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  nav {
+    float: left;
+  }
+  .container1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
+.square {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+}
